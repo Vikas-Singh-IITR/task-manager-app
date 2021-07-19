@@ -16,21 +16,21 @@ MongoClient.connect(
     }
     const db = client.db(databaseName);
 
-    db.collection("users")
-      .updateOne(
-        { name: "Yash" },
-        {
-          $set: {
-            name: "Binks",
-          },
-        },
-      )
-      .then((result) => {
-        console.log(result);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    // db.collection("users")
+    //   .updateOne(
+    //     { name: "Sahil" },
+    //     {
+    //       $set: {
+    //         name: "Binks",
+    //       },
+    //     },
+    //   )
+    //   .then((result) => {
+    //     console.log(result);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
 
     // db.collection("users").findOne({ name: "5" }, (error, result) => {
     //   if (error) {
